@@ -7,20 +7,17 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
-int speed(int a)
-{ if(a<=70)
-     {printf("ok");}
-     else{
-d=a-70;
-e=d/5;
-if(e<=12)
-   printf("%d",e);
-  else
-    printf("licence is suspended")
-     }
+int pattern(int a)
+{
+    for(int i=0;i<=a;i++)
+    {for(int j=0;j<=i;j++)
+    {printf("*");}
+    printf("\n");}
 }
 int main()
-{ int y;
-scanf("%d",&y);
-speed(y);}
+{
+    int j;
+    scanf("%d",&j);
+    pattern(j);
+}
+
